@@ -1,21 +1,20 @@
 # 🍏 Jez Salad Landing Page
 
-This repository contains the markup for the **Jez Salad** homepage according to the design.
+This repository contains the markup for the **Jez Salad** homepage according to the design. You can find it by this link
+https://www.figma.com/design/KW1GXSNkjF4OEjwEklwj1F/Fruit-Salad-Health-Food-(Community)?node-id=1-694
 
 ## 🚀 Project Structure
 
 - `index.html` – main HTML file.
-- `style.css` – page styling.
-- `assets/` – images and icons.
+- `images/` – images and icons.
 
 ## 📌 Features
 ✅ Responsive design  
-✅ Modern HTML and CSS usage  
+✅ Semantic HTML usage  
 ✅ Clean and structured code  
 
 ## 🛠 Technologies Used
 - **HTML5**
-- **CSS3**
 
 ## 📷 Design
 ![Jez Salad](image.png)
@@ -24,5 +23,4 @@ This repository contains the markup for the **Jez Salad** homepage according to 
 1. Download the repository
 2. Open `index.html` in a browser
 
-## 📞 Contact
-If you have any questions or suggestions, feel free to reach out!
+Have you watched JoJo(it's a masterpiece BTW)?
