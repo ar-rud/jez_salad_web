@@ -16,9 +16,6 @@ https://www.figma.com/design/KW1GXSNkjF4OEjwEklwj1F/Fruit-Salad-Health-Food-(Com
 ## 🛠 Technologies Used
 - **HTML5**
 
-## 📷 Design
-![Jez Salad](image.png)
-
 ## 🔧 How to Run the Project
 1. Download the repository
 2. Open `index.html` in a browser
