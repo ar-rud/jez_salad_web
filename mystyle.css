@@ -1,0 +1,578 @@
+/* https://stackoverflow.com/questions/17756649/disable-the-horizontal-scroll#:~:text=html%2C%20body%20%7B%0A%20%20%20%20max%2Dwidth%3A%20100%25%3B%0A%20%20%20%20overflow%2Dx%3A%20hidden%3B%0A%7D */
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0px;
+  min-width: 800;
+}
+
+.main-content > * {
+  margin: 80px 40px;
+}
+
+.background-img {
+  position: absolute;
+  z-index: -2;
+  right: 0;
+  top: 0;
+  width: 50%;
+  background-image: linear-gradient(to bottom left, orange, 10%, white, white);
+}
+
+.text-logo {
+  font-weight: bold;
+  color: #000000;
+}
+
+.main-header-link {
+  color: #575757;
+  text-decoration: none;
+}
+
+.main-header-link:visited {
+  /* text-decoration: none; */
+  color: #575757;
+}
+
+.orange-part-title {
+  color: #fb9333;
+}
+
+.main-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 40px;
+}
+
+.main-header-bookmarks {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem; /*pulled out of @$$*/
+  margin: 20px;
+  justify-content: center;
+}
+
+.orange-butt {
+  background-color: #fb9333;
+  color: #ffffff;
+  border: none;
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  width: fit-content;
+}
+
+.number-one-title {
+  background-color: #fff0dc;
+  padding: 1rem 1.5rem;
+  color: #fb9333;
+  border-radius: 2rem;
+  width: fit-content;
+}
+
+.subheader {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.subheader-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.subheader-woman-salad {
+  position: relative;
+  width: 100%;
+  min-width: 400px; /* random size. looks diabolical when shrinked */
+}
+
+.main-headlines {
+  font-size: 3.5vw;
+}
+
+#headline-subheader {
+  font-size: 5vw;
+}
+
+.subheader-text {
+  font-size: 1rem;
+}
+
+.subheader-section-number {
+  display: block;
+}
+
+.subheader-section-figures-list {
+  display: flex;
+  gap: 3rem;
+  margin: 20px 20px 20px 0px;
+}
+
+/* in question. current way, beause can't anchor to woman img. */
+.subheader-aside {
+  position: relative;
+}
+
+.aside-review {
+  display: flex;
+  position: absolute;
+  top: 70%;
+  background-color: #ffffff;
+  border-radius: 4rem;
+  padding: 5px;
+  width: 45%;
+  align-items: center;
+  min-width: 240px;
+}
+
+.aside-review-wrapper > * {
+  display: block;
+}
+
+.aside-review-smile {
+  float: left;
+  /* units in question */
+  width: 5vw;
+}
+
+.aside-review-text {
+  font-weight: 600;
+}
+
+.aside-calories {
+  position: absolute;
+  top: 65%;
+  right: 0%;
+  background-color: #ffffffe5;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.aside-calories > * {
+  display: block;
+}
+
+.aside-calories-number {
+  font-weight: 600;
+}
+
+.progressbar-wrapper {
+  display: flex;
+  gap: 0.5vw;
+}
+
+.outer-progressbar {
+  background-color: #f5f5f5;
+  border-radius: 0.5vw;
+}
+
+.inner-progressbar {
+  padding: 0.5vw;
+  background: linear-gradient(#ffd7a0, #fb9333);
+  border-radius: 0.5vw;
+}
+
+/* below is contrversial way to mimc 
+the progressbars in the original design */
+
+#inner-first {
+  padding-top: 1.8vw;
+}
+
+#outer-first {
+  padding-top: 3.2vw;
+}
+
+#inner-second {
+  padding-top: 2.4vw;
+}
+
+#outer-second {
+  padding-top: 2.6vw;
+}
+
+#inner-third {
+  padding-top: 3.2vw;
+}
+
+#outer-third {
+  padding-top: 1.8vw;
+}
+
+#inner-fourth {
+  padding-top: 2.6vw;
+}
+
+#outer-fourth {
+  padding-top: 2.4vw;
+}
+
+#inner-fifth {
+  padding-top: 2vw;
+}
+
+#outer-fifth {
+  padding-top: 3vw;
+}
+
+#inner-sixth {
+  padding-top: 3.4vw;
+}
+
+#outer-sixth {
+  padding-top: 1.6vw;
+}
+
+#inner-seventh {
+  padding-top: 4vw;
+}
+
+#outer-seventh {
+  padding-top: 1vw;
+}
+
+#inner-eighth {
+  padding-top: 4.2vw;
+}
+
+#outer-eighth {
+  padding-top: 0.8vw;
+}
+
+/* end of the contraversial thing above */
+
+.reasons-section {
+  display: grid;
+  grid-template-columns: 45% 45%;
+  column-gap: 10%;
+  align-items: center;
+}
+
+.reasons-section :first-child {
+  width: 100%;
+}
+
+.reasons-wrapper {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  column-gap: 5%;
+  margin: 30px;
+}
+
+.reasons-article {
+  border: 1px solid #fff0da;
+  border-radius: 3vw;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  justify-content: space-between;
+}
+
+.reasons-article:hover {
+  box-shadow: 0px 10px 10px 10px #976d0033;
+}
+
+.reasons-article-img {
+  width: 40%;
+  min-width: 100px;
+  margin-bottom: 40px;
+}
+
+.reasons-article-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.reasons-article-button {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 30%;
+  min-width: 135px;
+  border-radius: 2rem;
+  border: none;
+  background-color: #ffffff;
+}
+
+.reasons-article-button:hover {
+  color: #ffffff;
+  background-color: #fb9333;
+}
+
+.article-button-icon {
+  width: 20%;
+}
+
+.people-banner {
+  background-color: #ffe8c780;
+  margin: 0px;
+  padding: 150px 0px 100px 60px;
+  display: grid;
+  grid-template-columns: 35% 60%;
+  column-gap: 5%;
+}
+
+.people-articles-wrapper {
+  display: flex;
+  gap: 2rem;
+}
+
+.people-banner-article {
+  position: relative;
+  background-color: white;
+  padding: 100px 10px 10px 10px;
+  display: flex;
+  flex-direction: column;
+  left: 50px;
+}
+
+.people-img {
+  position: absolute;
+  width: 100px;
+  left: 10px;
+  top: -50px;
+}
+
+.people-article-name {
+  font-size: 1.5rem;
+}
+
+.people-banner-page-current {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.people-banner-pages-number {
+  font-weight: 700;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 120px;
+}
+
+.people-butt {
+  background-color: #ffc87a;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 10px;
+}
+
+.people-butt:hover {
+  background-color: #fb9333;
+}
+
+/* https://stackoverflow.com/questions/44533946/css-positioning-icon-inside-a-button/44533968#:~:text=!important%3B-,vertical%2Dalign%3Amiddle%3B,-%7D%0A%0Abutton%20%7B */
+
+.people-butt-arrow {
+  width: 70%;
+  vertical-align: middle;
+}
+
+.menu-small-title {
+  color: #fb9333;
+}
+
+.menu-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu-article-wrapper {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  gap: 5%;
+  margin: 30px 80px;
+}
+
+.menu-banner-article {
+  position: relative;
+}
+
+.menu-article-img {
+  width: 100%;
+}
+
+.menu-article-name {
+  position: absolute;
+  top: 73%;
+  left: 10%;
+  color: #ffffff;
+  font-size: 1.5vw;
+}
+
+.menu-article-price {
+  position: absolute;
+  color: #ffffff;
+  left: 10%;
+  top: 80%;
+  font-size: 3vw;
+  font-weight: 700;
+}
+
+#menu-headline {
+  text-align: center;
+}
+
+.subscribe-banner {
+  position: relative;
+  background-color: #fff1de;
+  /* horizontal margin: main-content + menu-article-wrapper */
+  margin: 0px 120px;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 2rem;
+  z-index: -2;
+}
+
+.subscribe-banner > * {
+  text-align: center;
+}
+
+.subscribe-bg-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  z-index: -1;
+}
+
+.subscribe-small-title {
+  color: #fb9333;
+  font-size: 20px;
+}
+
+#subscribe-headline {
+  margin: 0px;
+  color: #585858;
+}
+
+.subscribe-form {
+  /* i pulled 40 px out of a$$ to make form margin look like 
+  the figma design. same in subscribe-headline with 0px */
+  margin: 40px;
+  position: relative;
+  width: 70%;
+  min-width: 350px;
+}
+
+.subscribe-input {
+  border: none;
+  border-radius: 40px;
+  padding: 20px 40px;
+  width: 100%;
+  /* https://stackoverflow.com/questions/69062426/input-element-exceeding-its-parents-width#:~:text=box%2Dsizing%3A%20border%2Dbox%3B */
+  box-sizing: border-box;
+}
+
+#subscribe-butt {
+  position: absolute;
+  top: 5px;
+  bottom: 5px;
+  right: 5px;
+}
+
+.main-footer {
+  display: flex;
+  margin: 80px 120px;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer-jez-salad {
+  width: 15%;
+  justify-content: space-between;
+}
+
+.footer-main-label {
+  /* sh1t in question  
+  following original design*/
+
+  margin-bottom: -30%;
+}
+
+.footer-text {
+  margin-bottom: -30%;
+}
+
+.footer-title {
+  color: #fb9333;
+}
+
+.footer-feature-item {
+  color: #575757;
+  text-decoration: none;
+}
+
+.footer-feature-item:visited {
+  color: #575757;
+}
+
+.main-footer > * {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-media-wrapper {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.footer-media-image {
+  width: 50%;
+}
+
+.footer-copyright {
+  position: relative;
+  bottom: 0px;
+}
+
+.footer-contact-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-contact-img {
+  width: 10%;
+}
+
+/* Current problems:
+
+- overlay aside review and calories when shrinked +
+- not positioned or anchored against woman image +
+- woman image not using min width -
+- window has no min width -?
+- usage of vw (?) +
+- reasons buttons arrow icons dont change when hover +
+- random horizontal margins in reasons etc - 
+- to be added a heart img above a woman if requested +
+- weird positioning and proportions of the bg img in subscribe +
+- most sizes use rem units (in sum places because of vw usage) ??
+    but some use px like subscribe-small-title ?? 
+- input ain't gonna work today +
+- orange butts have zero response if hover + 
+- horizontal banners margins are nightmare +
+*/
