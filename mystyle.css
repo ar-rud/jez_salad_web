@@ -11,11 +11,17 @@ body {
 
 body {
   margin: 0px;
-  min-width: 800;
+  min-width: 1200px; 
+  /* ??? */
 }
 
 .main-content > * {
-  margin: 80px 40px;
+  margin: 0px 135px;
+}
+
+.main-content {
+  margin-top: 64px;
+  margin-bottom: 0px;
 }
 
 .background-img {
@@ -28,8 +34,10 @@ body {
 }
 
 .text-logo {
-  font-weight: bold;
-  color: #000000;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: #585858;
+  font-size: 24px;
 }
 
 .main-header-link {
@@ -42,8 +50,21 @@ body {
   color: #575757;
 }
 
+.main-header-bookmarks .main-header-link:first-child {
+  color: #fb9300;
+}
+
+.main-header-bookmarks .main-header-link:first-child:visited {
+  /* text-decoration: none; */
+  color: #fb9300;
+}
+
 .orange-part-title {
   color: #fb9333;
+}
+
+#text-logo-orange {
+  font-weight: 900;
 }
 
 .main-header {
@@ -52,38 +73,40 @@ body {
   justify-content: center;
   justify-content: space-between;
   align-items: center;
-  margin: 0px 40px;
+  margin: 30px 135px;
 }
 
 .main-header-bookmarks {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 2rem; /*pulled out of @$$*/
-  margin: 20px;
-  justify-content: center;
+  justify-content: space-between;
+  width: 30%;
 }
 
 .orange-butt {
   background-color: #fb9333;
   color: #ffffff;
   border: none;
-  border-radius: 2rem;
-  padding: 1rem 2rem;
+  border-radius: 100px;
+  padding: 16px 32px;
   width: fit-content;
 }
 
 .number-one-title {
   background-color: #fff0dc;
-  padding: 1rem 1.5rem;
+  padding: 16px;
   color: #fb9333;
-  border-radius: 2rem;
+  border-radius: 100px;
   width: fit-content;
+  font-weight: 600;
+  font-size: 16px;
 }
 
 .subheader {
   display: grid;
   grid-template-columns: 50% 50%;
+  padding-bottom: 30px;
 }
 
 .subheader-section {
@@ -98,26 +121,43 @@ body {
   min-width: 400px; /* random size. looks diabolical when shrinked */
 }
 
+/* to be done size from vw to rem or px + br if needed*/
 .main-headlines {
-  font-size: 3.5vw;
+  font-size: 48px;
+  color: #585858;
 }
 
 #headline-subheader {
-  font-size: 5vw;
+  font-size: 72px;
+  max-width: 598px; /*following design text splitting*/
+}
+
+#headline-people {
+  color: #333333;
+  margin-top: -30px;
+  margin-bottom: 30px;
 }
 
 .subheader-text {
-  font-size: 1rem;
+  font-size: 20px;
+  color: #828282;
+  max-width: 507px; /* following design text splitting */
 }
 
 .subheader-section-number {
   display: block;
+  color: #575757;
+  font-size: 24px;
+  font-weight: 600;
 }
 
 .subheader-section-figures-list {
   display: flex;
-  gap: 3rem;
+  gap: 52px;
   margin: 20px 20px 20px 0px;
+  color: #828282;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 /* in question. current way, beause can't anchor to woman img. */
@@ -128,13 +168,14 @@ body {
 .aside-review {
   display: flex;
   position: absolute;
-  top: 70%;
+  top: 75%;
   background-color: #ffffff;
-  border-radius: 4rem;
+  border-radius: 35px;
   padding: 5px;
-  width: 45%;
+  width: 288px; /* design width */
   align-items: center;
   min-width: 240px;
+  gap: 20px;
 }
 
 .aside-review-wrapper > * {
@@ -144,120 +185,154 @@ body {
 .aside-review-smile {
   float: left;
   /* units in question */
-  width: 5vw;
+  width: 60px;
 }
 
+/* to redo layout */
 .aside-review-text {
   font-weight: 600;
+  color: #575757;
+}
+
+.aside-review-rating {
+  font-weight: 600;
+  font-size: 12px;
+}
+.review-text {
+  font-weight: 400;
+  color: #828282;
 }
 
 .aside-calories {
   position: absolute;
-  top: 65%;
+  top: 73%;
   right: 0%;
   background-color: #ffffffe5;
-  padding: 1rem;
-  border-radius: 1rem;
+  padding: 16px;
+  border-radius: 16px;
 }
 
 .aside-calories > * {
   display: block;
 }
 
+.aside-calories-title {
+  font-weight: 500;
+  font-size: 16px;
+  color: #575757;
+}
+
 .aside-calories-number {
   font-weight: 600;
+  font-size: 24px;
+  color: #2b2b2b;
 }
 
 .progressbar-wrapper {
   display: flex;
-  gap: 0.5vw;
+  gap: 5px;
 }
 
 .outer-progressbar {
   background-color: #f5f5f5;
-  border-radius: 0.5vw;
+  border-radius: 100px;
 }
 
 .inner-progressbar {
-  padding: 0.5vw;
+  padding: 5px;
   background: linear-gradient(#ffd7a0, #fb9333);
-  border-radius: 0.5vw;
+  border-radius: 100px;
 }
 
 /* below is contrversial way to mimc 
 the progressbars in the original design */
 
 #inner-first {
-  padding-top: 1.8vw;
+  padding-top: 30px;
 }
 
 #outer-first {
-  padding-top: 3.2vw;
+  padding-top: 43px;
 }
 
 #inner-second {
-  padding-top: 2.4vw;
+  padding-top: 40px;
 }
 
 #outer-second {
-  padding-top: 2.6vw;
+  padding-top: 33px;
 }
 
 #inner-third {
-  padding-top: 3.2vw;
+  padding-top: 52px;
 }
 
 #outer-third {
-  padding-top: 1.8vw;
+  padding-top: 21px;
 }
 
 #inner-fourth {
-  padding-top: 2.6vw;
+  padding-top: 45px;
 }
 
 #outer-fourth {
-  padding-top: 2.4vw;
+  padding-top: 28px;
 }
 
 #inner-fifth {
-  padding-top: 2vw;
+  padding-top: 40px;
 }
 
 #outer-fifth {
-  padding-top: 3vw;
+  padding-top: 33px;
 }
 
 #inner-sixth {
-  padding-top: 3.4vw;
+  padding-top: 58px;
 }
 
 #outer-sixth {
-  padding-top: 1.6vw;
+  padding-top: 15px;
 }
 
 #inner-seventh {
-  padding-top: 4vw;
+  padding-top: 63px;
 }
 
 #outer-seventh {
-  padding-top: 1vw;
+  padding-top: 10px;
 }
 
 #inner-eighth {
-  padding-top: 4.2vw;
+  padding-top: 65px;
 }
 
 #outer-eighth {
-  padding-top: 0.8vw;
+  padding-top: 8px;
 }
 
 /* end of the contraversial thing above */
+.reasons-banner {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.reasons-headline {
+  max-width: 613px;
+  margin: 0px;
+}
+
+.reasons-text {
+  font-size: 20px;
+  font-weight: 500;
+  color: #828282;
+  max-width: 467px;
+}
 
 .reasons-section {
-  display: grid;
-  grid-template-columns: 45% 45%;
-  column-gap: 10%;
+  display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .reasons-section :first-child {
@@ -268,13 +343,13 @@ the progressbars in the original design */
   display: grid;
   grid-template-columns: 30% 30% 30%;
   column-gap: 5%;
-  margin: 30px;
+  margin-top: 64px;
 }
 
 .reasons-article {
   border: 1px solid #fff0da;
-  border-radius: 3vw;
-  padding: 1.5rem;
+  border-radius: 50px;
+  padding: 29px; /*design*/
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
@@ -292,52 +367,86 @@ the progressbars in the original design */
 }
 
 .reasons-article-title {
-  font-size: 1.5rem;
+  font-size: 24px;
   font-weight: 600;
+  color: #2b2b2b;
+}
+
+.reasons-article-text {
+  color: #575757;
 }
 
 .reasons-article-button {
-  padding: 1rem;
+  padding: 10px 24px;
+  gap: 10px;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  width: 30%;
-  min-width: 135px;
-  border-radius: 2rem;
+  /* justify-content: space-evenly; */
+  /* width: 30%; */
+  /* min-width: 135px; */
+  width: fit-content;
+  border-radius: 100px;
   border: none;
   background-color: #ffffff;
+  color: #575757;
 }
 
-.reasons-article-button:hover {
+.reasons-article:hover .reasons-article-button {
   color: #ffffff;
   background-color: #fb9333;
 }
 
-.article-button-icon {
-  width: 20%;
+/*change img in hover by design*/
+
+.article-button-icon-black {
+  width: 24px;
 }
+.article-button-icon-white {
+  width: 24px;
+  display: none;
+}
+
+.reasons-article:hover .article-button-icon-black {
+  display: none;
+}
+
+.reasons-article:hover .article-button-icon-white {
+  display: inline;
+}
+/*end of change img in hover by design*/
 
 .people-banner {
   background-color: #ffe8c780;
   margin: 0px;
-  padding: 150px 0px 100px 60px;
-  display: grid;
-  grid-template-columns: 35% 60%;
-  column-gap: 5%;
+  padding: 170px 0px 120px 135px;
+  display: flex;
 }
 
+.people-banner-section {
+  max-width: 408px;
+}
+
+.people-banner-text {
+  color: #999999;
+  margin-bottom: 32px;
+}
+
+/*https://stackoverflow.com/questions/47715831/setting-a-max-width-for-flex-items#:~:text=I%20would%20apply%20a%20width%20or%20min%2Dwidth%20to%20the%20.child%20items%20(or%20left/right%20padding%20that%20creates%20the%20distance%20between%20them)%20and%20margin%2Dleft%3A%20auto*/
 .people-articles-wrapper {
   display: flex;
-  gap: 2rem;
+  gap: 30px;
+  max-width: 60%;
+  margin-left: auto;
 }
 
 .people-banner-article {
   position: relative;
   background-color: white;
-  padding: 100px 10px 10px 10px;
+  padding: 150px 20px 20px 20px;
   display: flex;
   flex-direction: column;
   left: 50px;
+  border-radius: 8px;
 }
 
 .people-img {
@@ -348,22 +457,37 @@ the progressbars in the original design */
 }
 
 .people-article-name {
-  font-size: 1.5rem;
+  font-size: 24px;
+  color: #2b2b2b;
+  font-weight: 500;
+}
+
+.people-article-age {
+  font-size: 14px;
+  font-weight: 500;
+  color: #999999;
+}
+
+.people-article-text {
+  color: #575757;
 }
 
 .people-banner-page-current {
-  font-size: 3rem;
+  font-size: 48px;
   font-weight: 700;
+  color: #333333;
 }
 
 .people-banner-pages-number {
   font-weight: 700;
+  color: #cccccc;
 }
 
 .button-wrapper {
   display: flex;
   justify-content: space-between;
   width: 120px;
+  margin-top: 24px;
 }
 
 .people-butt {
@@ -386,19 +510,22 @@ the progressbars in the original design */
 
 .menu-small-title {
   color: #fb9333;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 .menu-banner {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 100px;
+  padding-top: 100px;
 }
 
 .menu-article-wrapper {
   display: grid;
-  grid-template-columns: 30% 30% 30%;
-  gap: 5%;
-  margin: 30px 80px;
+  grid-template-columns: auto auto auto;
+  gap: 40px;
 }
 
 .menu-banner-article {
@@ -414,7 +541,8 @@ the progressbars in the original design */
   top: 73%;
   left: 10%;
   color: #ffffff;
-  font-size: 1.5vw;
+  font-size: 24px;
+  font-weight: 600;
 }
 
 .menu-article-price {
@@ -422,29 +550,46 @@ the progressbars in the original design */
   color: #ffffff;
   left: 10%;
   top: 80%;
-  font-size: 3vw;
+  font-size: 40px;
   font-weight: 700;
 }
 
 #menu-headline {
   text-align: center;
+  max-width: 753px;
+  margin-top: 12px;
+  margin-bottom: 71px;
 }
 
 .subscribe-banner {
   position: relative;
   background-color: #fff1de;
   /* horizontal margin: main-content + menu-article-wrapper */
-  margin: 0px 120px;
+  margin: 100px 135px;
   border-radius: 50px;
+  padding: 48px 0px 98px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 3rem 2rem;
-  z-index: -2;
+  justify-content: center;
 }
 
 .subscribe-banner > * {
   text-align: center;
+}
+
+.subscribe-banner-text {
+  color: #575757;
+  max-width: 480px; /*design*/
+  margin-top: 24px;
+  margin-bottom: 0px;
+}
+
+.subscribe-content-warpper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+  max-width: 674px;
 }
 
 .subscribe-bg-img {
@@ -455,7 +600,6 @@ the progressbars in the original design */
   right: 0px;
   left: 0px;
   bottom: 0px;
-  z-index: -1;
 }
 
 .subscribe-small-title {
@@ -469,17 +613,15 @@ the progressbars in the original design */
 }
 
 .subscribe-form {
-  /* i pulled 40 px out of a$$ to make form margin look like 
-  the figma design. same in subscribe-headline with 0px */
-  margin: 40px;
+  margin-top: 80px;
   position: relative;
-  width: 70%;
+  width: 100%;
   min-width: 350px;
 }
 
 .subscribe-input {
   border: none;
-  border-radius: 40px;
+  border-radius: 100px;
   padding: 20px 40px;
   width: 100%;
   /* https://stackoverflow.com/questions/69062426/input-element-exceeding-its-parents-width#:~:text=box%2Dsizing%3A%20border%2Dbox%3B */
@@ -495,9 +637,12 @@ the progressbars in the original design */
 
 .main-footer {
   display: flex;
-  margin: 80px 120px;
+  margin: 50px 135px;
   justify-content: space-between;
-  gap: 20px;
+}
+
+.main-footer > * {
+  color: #575757;
 }
 
 .footer-jez-salad {
@@ -506,10 +651,15 @@ the progressbars in the original design */
 }
 
 .footer-main-label {
-  /* sh1t in question  
-  following original design*/
-
   margin-bottom: -30%;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  color: #000000;
+}
+
+#footer-orange {
+  font-weight: 900;
 }
 
 .footer-text {
@@ -518,6 +668,8 @@ the progressbars in the original design */
 
 .footer-title {
   color: #fb9333;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .footer-feature-item {
@@ -547,6 +699,7 @@ the progressbars in the original design */
 .footer-copyright {
   position: relative;
   bottom: 0px;
+  font-size: 16px;
 }
 
 .footer-contact-wrapper {
@@ -561,18 +714,5 @@ the progressbars in the original design */
 
 /* Current problems:
 
-- overlay aside review and calories when shrinked +
-- not positioned or anchored against woman image +
-- woman image not using min width -
-- window has no min width -?
-- usage of vw (?) +
-- reasons buttons arrow icons dont change when hover +
-- random horizontal margins in reasons etc - 
-- to be added a heart img above a woman if requested +
-- weird positioning and proportions of the bg img in subscribe +
-- most sizes use rem units (in sum places because of vw usage) ??
-    but some use px like subscribe-small-title ?? 
-- input ain't gonna work today +
-- orange butts have zero response if hover + 
-- horizontal banners margins are nightmare +
+- to be added a heart img above a woman if requested 
 */

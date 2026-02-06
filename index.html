@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -19,15 +19,16 @@
       alt="Background"
     />
     <!-- class main-header-side in question -->
-    <header class="main-header">
+    <header class="main-header" id="header-home">
       <a href="#" class="main-header-link text-logo"
-        ><span class="orange-part-title">JEZ</span> SALAD</a
+        ><span class="orange-part-title" id="text-logo-orange">JEZ</span>
+        SALAD</a
       >
       <div class="main-header-bookmarks">
-        <a href="#" class="main-header-link">Home</a>
-        <a href="#" class="main-header-link">Menu</a>
-        <a href="#" class="main-header-link">Contact</a>
-        <a href="#" class="main-header-link">About Us</a>
+        <a href="#header-home" class="main-header-link">Home</a>
+        <a href="#menu-banner" class="main-header-link">Menu</a>
+        <a href="#footer-contact" class="main-header-link">Contact</a>
+        <a href="#people-aboutus-banner" class="main-header-link">About Us</a>
       </div>
       <button class="orange-butt main-header-side">Sign</button>
     </header>
@@ -111,13 +112,14 @@
           </div>
         </aside>
       </div>
-      <div class="reasons-banner">
+      <div class="reasons-banner" id="reasons-promo-banner">
         <section class="reasons-section">
-          <h1 class="main-headlines">
-            WHY CHOOSE US FOR
+          <h1 class="main-headlines reasons-headline">
+            WHY CHOOSE US <br />
+            FOR
             <span class="orange-part-title">YOUR HEALTHY FOOD</span>
           </h1>
-          <p>
+          <p class="reasons-text">
             We continue to consistently choose and maintain the quality of the
             fruit served, so that it remains fresh and nutritious when you eat
             it.
@@ -138,9 +140,14 @@
             <button class="reasons-article-button">
               Learn more
               <img
-                class="article-button-icon"
-                src="./images/arrow.png"
-                alt="arrow"
+                class="article-button-icon-black"
+                src="./images/arrow_black.png"
+                alt="black arrow icon"
+              />
+              <img
+                class="article-button-icon-white"
+                src="./images/arrow_white.png"
+                alt="white arrow icon"
               />
             </button>
           </article>
@@ -158,9 +165,14 @@
             <button class="reasons-article-button">
               Learn more
               <img
-                class="article-button-icon"
-                src="./images/arrow.png"
-                alt="arrow"
+                class="article-button-icon-black"
+                src="./images/arrow_black.png"
+                alt="black arrow icon"
+              />
+              <img
+                class="article-button-icon-white"
+                src="./images/arrow_white.png"
+                alt="white arrow icon"
               />
             </button>
           </article>
@@ -174,17 +186,22 @@
             <button class="reasons-article-button">
               Learn more
               <img
-                class="article-button-icon"
-                src="./images/arrow.png"
-                alt="arrow"
+                class="article-button-icon-black"
+                src="./images/arrow_black.png"
+                alt="black arrow icon"
+              />
+              <img
+                class="article-button-icon-white"
+                src="./images/arrow_white.png"
+                alt="white arrow icon"
               />
             </button>
           </article>
         </div>
       </div>
-      <div class="people-banner">
+      <div class="people-banner" id="people-aboutus-banner">
         <section class="people-banner-section">
-          <h1 class="main-headlines">
+          <h1 class="main-headlines" id="headline-people">
             What Are People Saying
             <span class="orange-part-title">About Us</span>
           </h1>
@@ -261,7 +278,7 @@
           </article>
         </div>
       </div>
-      <div class="menu-banner">
+      <div class="menu-banner" id="menu-banner">
         <span class="menu-small-title">MENU YANG MEMBUATMU JATUH CINTA</span>
         <h1 class="main-headlines" id="menu-headline">
           ENJOY THE BEST MENU AND GET
@@ -297,99 +314,104 @@
           </article>
         </div>
       </div>
-      <div class="subscribe-banner">
+      <div class="subscribe-banner" id="subscribe-banner-section">
         <img
           src="./images/subscribe_bg.png"
           alt="subscribe background"
           class="subscribe-bg-img"
         />
-        <span class="subscribe-small-title">Our Subscribe</span>
-        <h1 class="main-headlines" id="subscribe-headline">
-          Subscribe To Get The Latest Promo from Jez Salad
-        </h1>
-        <p class="subscribe-banner-text">
-          We recommended you to subscribe to our promo program, drop your email
-          below to get daily update about us
-        </p>
-        <form action="#" class="subscribe-form">
-          <input
-            type="text"
-            class="subscribe-input"
-            placeholder="Enter your email address"
-          />
-          <button class="orange-butt" id="subscribe-butt">Subscribe</button>
-        </form>
-      </div>
-      <footer class="main-footer">
-        <div class="footer-jez-salad">
-          <span class="footer-main-label"
-            ><span class="orange-part-title">JEZ</span>SALAD</span
-          >
-          <p class="footer-text">
-            Jez Salad is the pioneer of healthy fruit salad with high nutrition.
+        <div class="subscribe-content-warpper">
+          <span class="subscribe-small-title">Our Subscribe</span>
+          <h1 class="main-headlines" id="subscribe-headline">
+            Subscribe To Get The Latest Promo from Jez Salad
+          </h1>
+          <p class="subscribe-banner-text">
+            We recommended you to subscribe to our promo program, drop your
+            email below to get daily update about us
           </p>
-          <span class="footer-copyright">©Copyright Jez Salad</span>
-        </div>
-        <div class="footer-feature">
-          <span class="footer-title">Feature</span>
-          <a href="#" class="footer-feature-item">Menu</a>
-          <a href="#" class="footer-feature-item">Promo</a>
-          <a href="#" class="footer-feature-item">Contact</a>
-          <a href="#" class="footer-feature-item">About Us</a>
-        </div>
-        <div class="footer-contact-info">
-          <span class="footer-title">Get in Touch</span>
-          <div class="footer-contact-wrapper">
-            <img
-              src="./images/address.png"
-              alt="address"
-              class="footer-contact-img"
+          <form action="#subscribe-banner-section" class="subscribe-form">
+            <input
+              type="text"
+              class="subscribe-input"
+              placeholder="Enter your email address"
             />
-            <span class="footer-contact-option"
-              >8819 Ohio St. South Gate, CA 90280</span
-            >
-          </div>
-          <div class="footer-contact-wrapper">
-            <img
-              src="./images/email.png"
-              alt="email"
-              class="footer-contact-img"
-            />
-            <span class="footer-contact-option">Ourstudio@hello.com</span>
-          </div>
-          <div class="footer-contact-wrapper">
-            <img
-              src="./images/phone.png"
-              alt="phone"
-              class="footer-contact-img"
-            />
-            <span class="footer-contact-option">+1 386-688-3295</span>
-          </div>
+            <button class="orange-butt" id="subscribe-butt">Subscribe</button>
+          </form>
         </div>
-        <div class="footer-social-media">
-          <div class="footer-media-wrapper">
-            <a href="#" class="footer-media-link">
-              <img
-                src="./images/twitter.png"
-                alt="Twitter"
-                class="footer-media-image"
-            /></a>
-            <a href="#" class="footer-media-link">
-              <img
-                src="./images/linkedin.png"
-                alt="linkedIn"
-                class="footer-media-image"
-            /></a>
-            <a href="#" class="footer-media-link">
-              <img
-                src="./images/instagram.png"
-                alt="Instagram"
-                class="footer-media-image"
-            /></a>
-          </div>
-          <p class="footer-media-text">Follow our social media.</p>
-        </div>
-      </footer>
+      </div>
     </main>
+    <footer class="main-footer" id="footer-contact">
+      <div class="footer-jez-salad">
+        <span class="footer-main-label"
+          ><span class="orange-part-title" id="footer-orange">JEZ</span>
+          SALAD</span
+        >
+        <p class="footer-text">
+          Jez Salad is the pioneer of healthy fruit salad with high nutrition.
+        </p>
+        <span class="footer-copyright">©Copyright Jez Salad</span>
+      </div>
+      <div class="footer-feature">
+        <span class="footer-title">Feature</span>
+        <a href="#menu-banner" class="footer-feature-item">Menu</a>
+        <a href="#reasons-promo-banner" class="footer-feature-item">Promo</a>
+        <a href="#footer-contact" class="footer-feature-item">Contact</a>
+        <a href="#people-aboutus-banner" class="footer-feature-item"
+          >About Us</a
+        >
+      </div>
+      <div class="footer-contact-info">
+        <span class="footer-title">Get in Touch</span>
+        <div class="footer-contact-wrapper">
+          <img
+            src="./images/address.png"
+            alt="address"
+            class="footer-contact-img"
+          />
+          <span class="footer-contact-option"
+            >8819 Ohio St. South Gate, CA 90280</span
+          >
+        </div>
+        <div class="footer-contact-wrapper">
+          <img
+            src="./images/email.png"
+            alt="email"
+            class="footer-contact-img"
+          />
+          <span class="footer-contact-option">Ourstudio@hello.com</span>
+        </div>
+        <div class="footer-contact-wrapper">
+          <img
+            src="./images/phone.png"
+            alt="phone"
+            class="footer-contact-img"
+          />
+          <span class="footer-contact-option">+1 386-688-3295</span>
+        </div>
+      </div>
+      <div class="footer-social-media">
+        <div class="footer-media-wrapper">
+          <a href="#" class="footer-media-link">
+            <img
+              src="./images/twitter.png"
+              alt="Twitter"
+              class="footer-media-image"
+          /></a>
+          <a href="#" class="footer-media-link">
+            <img
+              src="./images/linkedin.png"
+              alt="linkedIn"
+              class="footer-media-image"
+          /></a>
+          <a href="#" class="footer-media-link">
+            <img
+              src="./images/instagram.png"
+              alt="Instagram"
+              class="footer-media-image"
+          /></a>
+        </div>
+        <p class="footer-media-text">Follow our social media.</p>
+      </div>
+    </footer>
   </body>
 </html>
